@@ -41,7 +41,6 @@ function encryptStage1(text){
             x += 1
         })
     });
-    console.log(result)
     return result
 }
 
@@ -77,9 +76,24 @@ function decryptStage1(text){
 }
 
 function d(){
-    document.getElementById("result").innerHTML = decryptStage1(decryptStage1(document.getElementById("text").value))
+    let inp = document.getElementById("text").value
+    let d = document.getElementById("text").value.slice(0,1)
+    let da = document.getElementById("text").value.slice(1,document.getElementById("text").value.length)
+    let rep = parseInt(d)
+    inp = da
+    for(i = 0; i < rep*5; i++)
+        inp = decryptStage1(inp)
+
+    document.getElementById("result").innerHTML = inp
 }
 function e(){
-    document.getElementById("result").innerHTML = encryptStage1(encryptStage1(document.getElementById("text").value))
+    let rep = Math.floor(Math.random()*10)
+    if(rep == 0){
+        rep = 3
+    }
+    let inp = document.getElementById("text").value
+    for(i = 0; i < rep*5; i++)
+        inp = encryptStage1(inp)
+    document.getElementById("result").innerHTML = rep + inp
 }
 
