@@ -81,7 +81,7 @@ function d(){
     let da = document.getElementById("text").value.slice(1,document.getElementById("text").value.length)
     let rep = parseInt(d)
     inp = da
-    for(i = 0; i < rep*5; i++)
+    for(i = 0; i < rep*50; i++)
         inp = decryptStage1(inp)
 
     document.getElementById("result").innerHTML = inp
@@ -92,7 +92,7 @@ function e(){
         rep = 3
     }
     let inp = document.getElementById("text").value
-    for(i = 0; i < rep*5; i++)
+    for(i = 0; i < rep*50; i++)
         inp = encryptStage1(inp)
     document.getElementById("result").innerHTML = rep + inp
 }
