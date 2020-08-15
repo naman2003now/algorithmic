@@ -4,7 +4,7 @@ body{
     background-color: #EBECF0;
 }
 .buttonContaner{
-    width: 80%;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-direction: row;
