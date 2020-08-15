@@ -44,7 +44,7 @@ button, textarea {
         margin: auto;
         width: 80%;
         top: 10%;
-        height: 90%;
+        height: 500px;
         border-radius: 10px;
         display: flex;
         flex-direction: column;
