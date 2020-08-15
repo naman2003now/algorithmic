@@ -85,6 +85,10 @@ function d(){
         inp = decryptStage1(inp)
 
     document.getElementById("result").value = inp
+    if(isNaN(d)){
+        alert("Invalid Encryption");
+        document.getElementById("result").value = ""
+    }
 }
 function e(){
     let rep = Math.floor(Math.random()*10)
