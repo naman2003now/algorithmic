@@ -9,13 +9,13 @@
 <body>
 <div class="container">
     <div class="form">
-        <textarea type="text" id="text" value="" class="text" autocomplete="off" placeholder="Input"></textarea>
+        <textarea type="text" id="text" value="" class="text" autocomplete="off" placeholder="Input" spellcheck="false"></textarea>
         <div class="buttonContaner">
             <button id="encrypt" onclick="e()" class="buttons">encrypt</button>
             <button id="decrypt" onclick="d()" class="buttons">decrypt</button>
             <button id="copy" onclick="copy()" class="buttons">Copy</button>
         </div>
-        <textarea id="result" value="" readonly class="text" placeholder="Output"></textarea>
+        <textarea id="result" value="" readonly class="text" placeholder="Output"  spellcheck="false"></textarea>
         <script src="app.js"></script>
     </div>
 </div>
