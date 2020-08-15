@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Algorithmic</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div>
-        <input type="text" id="text" value="">
+<div class="container">
+    <div class="form">
+        <textarea type="text" id="text" value="" class="text" autocomplete="off" placeholder="Input"></textarea>
+        <div class="buttonContaner">
+            <button id="encrypt" onclick="e()" class="buttons">encrypt</button>
+            <button id="decrypt" onclick="d()" class="buttons">decrypt</button>
+            <button id="copy" onclick="copy()" class="buttons">Copy</button>
+        </div>
+        <textarea id="result" value="" readonly class="text" placeholder="Output"></textarea>
+        <script src="app.js"></script>
     </div>
-    <button id="encrypt" onclick="e()">encrypt</button>
-    <button id="decrypt" onclick="d()">decrypt</button>
-    <p id="result"></p>
-    <script src="app.js"></script>
+</div>
 </body>
 </html>

@@ -1,0 +1,100 @@
+
+
+body{
+    background-color: #EBECF0;
+}
+.buttonContaner{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 10%;
+}
+.container{
+    height: 95vh;
+}
+button, textarea {
+    border: 0;
+    outline: 0;
+    background-color:#EBECF0;
+    text-shadow: 1px 1px 0 #ffffff;
+    overflow: hidden;
+}
+@media only screen and (orientation: landscape){
+    .form{
+        position: relative;
+        margin: auto;
+        width: 50%;
+        top: 10%;
+        height: 80%;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
+@media only screen and (orientation: portrait){
+    .form{
+        position: relative;
+        margin: auto;
+        width: 80%;
+        top: 10%;
+        height: 90%;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+.text::placeholder{
+    color: #BABECC;
+    font-size: xx-large;
+    margin: auto;
+    height: 50%;
+    text-align: center;
+}
+.text{
+    text-align: top;
+    width: 90%;
+    align-self: center;
+    height: 37%;
+    border-radius: 10px;
+    border: 1px;
+    resize: none;
+    overflow: auto;
+    padding: 10px;
+    outline: none;
+    box-shadow:  inset 2px 2px 5px #BABECC, inset -5px -5px 10px #ffffff;
+    transition: all 0.1s ease-in-out;
+}
+.text::-webkit-scrollbar{
+    width: 0px;
+}
+.text:active{
+    box-shadow: inset 1px 1px 2px #BABECC, 
+                inset -1px -1px 2px #ffffff;
+    transition: all 0.1s ease-in-out;
+}
+.text:focus{
+    box-shadow: inset 1px 1px 2px #BABECC, 
+                inset -1px -1px 2px #ffffff;
+    transition: all 0.1s ease-in-out;
+}
+button{
+    color:#61677C;
+    font-weight: bold;
+    box-shadow: -5px -5px 20px #ffffff,  5px 5px 20px #BABECC;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-weight: 600;
+    width: 30%;
+    border-radius: 20px;
+}
+button:hover{
+    box-shadow: -2px -2px 5px #ffffff, 2px 2px 5px #BABECC;
+}
+button:active{
+    box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #ffffff;
+}
